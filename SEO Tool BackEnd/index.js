@@ -10,7 +10,7 @@ words.words.then((res)=>{
 
 function countWords(wordsArray) {
     let tempArr = {};
-    let finalArr = {};
+    let finalArr = [];
     wordsArray.forEach((e)=>{
         if(!(e in tempArr)){
             tempArr[e] = 1;
@@ -21,7 +21,11 @@ function countWords(wordsArray) {
     keysSorted = Object.keys(tempArr).sort(function(a,b){return tempArr[b]-tempArr[a]});
 
     keysSorted.forEach((e)=>{
-        finalArr[e] = tempArr[e];
+        finalArr.push({
+            word:e,
+            count:tempArr[e],
+            percentage:(tempArr[e]/wordsArray.length)*100
+        });
     });
 
     return finalArr;

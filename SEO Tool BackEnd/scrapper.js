@@ -2,13 +2,24 @@ let w = new Promise((resolve, reject)=>{
     let words = [];
     const request = require('request');
     const cheerio = require('cheerio');
+    //const windows1251 = require('windows-1251');
 
     let url = process.argv[2] != undefined ? process.argv[2] : "https://api.jquery.com/contents/";
+
+    const options = {
+        uri: url,
+        method: 'GET',
+        encoding: 'binary'
+    };
 
     request(url, (err, response, html)=>{
         if(err){
             reject(err);
         }else{
+
+            //html = new Buffer(html, 'binary');
+            //const text = html.toString('binary').windows1251.decode(html);
+
         let $ = cheerio.load(html);
         $('*').not('script').not('style').contents().each((i, el)=>{
             if(el.nodeType == 3){
