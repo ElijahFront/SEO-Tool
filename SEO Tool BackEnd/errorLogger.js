@@ -1,6 +1,8 @@
 const fs = require('fs');
+const dataModel = require('./dataModel').DataModel;
 module.exports = (err)=>{
-      fs.writeFile('../data.json', JSON.stringify({"error": err.message}), "utf8", (e)=>{
+    let data = new dataModel(0, err.message);
+    fs.writeFile('../data.json', JSON.stringify(data), "utf8", (e)=>{
 
-      });
+  });
 };

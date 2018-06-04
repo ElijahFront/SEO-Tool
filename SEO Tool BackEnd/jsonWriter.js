@@ -1,12 +1,10 @@
 const fs = require('fs');
-
+const dataModel = require('./dataModel').DataModel;
 module.exports = (data) =>{
+    let _data = new dataModel(1, data);
+    //let jsonData = JSON.stringify(data);
 
-    let jsonData = JSON.stringify(data);
-
-    fs.writeFile("../data.json", jsonData, "utf8", (err)=>{
+    fs.writeFile("../data.json", JSON.stringify(_data), "utf8", (err)=>{
         if(err) console.log(err);
-
     });
-
 };
