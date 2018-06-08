@@ -3,6 +3,9 @@
   "version": "",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "request": "^2.87.0"
+    "jschardet": "^1.6.0",
+    "request": "^2.87.0",
+    "windows-1251": "^1.0.0",
+    "windows-1252": "^1.0.0"
   }
 }
