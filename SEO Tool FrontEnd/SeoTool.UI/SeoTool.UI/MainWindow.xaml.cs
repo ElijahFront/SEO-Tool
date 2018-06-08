@@ -24,5 +24,10 @@ namespace SeoTool.UI
         {
             InitializeComponent();
         }
+
+        private void _NavigationFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

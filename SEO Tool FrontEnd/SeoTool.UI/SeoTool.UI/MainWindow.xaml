@@ -3,10 +3,34 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SeoTool.UI"
+       
+        
+        
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    
     <Grid>
         
-    </Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        
+        <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Visible" Navigated="_NavigationFrame_Navigated" />
+        
+            <TextBox Height="29" Width="300" HorizontalAlignment="Center" Margin="0,35,29,0"></TextBox>
+        <Button Height="29" Width="29" Margin="300,0,0,0" VerticalAlignment="Bottom">
+        <Image Name="imgSearch" DockPanel.Dock="Right" Source="Search.png" Height="23" Width="23"/>
+        </Button>
+        
+        <DataGrid  Grid.Row="1" Margin="20,20,20,20">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Слово" Width="1*" Binding="{Binding Word}"/>
+                <DataGridTextColumn Header="Частотность" Width="1*" Binding="{Binding Frequency}"/>
+                <DataGridTextColumn Header="Процент" Width="1*" Binding="{Binding Percent}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        </Grid>
 </Window>
