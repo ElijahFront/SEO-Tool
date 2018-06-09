@@ -7,31 +7,8 @@
         
         
         mc:Ignorable="d"
-<<<<<<< HEAD
+
         Title="SEO Tool" Height="350" Width="525">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="25"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="135"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="120"/>
-            <ColumnDefinition Width="63"/>
-            <ColumnDefinition Width="159"/>
-            <ColumnDefinition Width="63"/>
-            <ColumnDefinition Width="120"/>
-        </Grid.ColumnDefinitions>
-        <Label x:Name="label" Content="SEO Tool" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
-    </Grid>
-=======
-        Title="MainWindow" Height="350" Width="525">
     
     <Grid>
         
@@ -57,5 +34,4 @@
         </DataGrid>
         
         </Grid>
->>>>>>> 2647f14a57e19e9e6a22fc59ce7954915141fdb7
 </Window>
