@@ -19,7 +19,7 @@
             <ColumnDefinition Width="210*"/>
             <ColumnDefinition Width="150*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="label" Content="Registation" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontFamily="Arial" FontStyle="Normal" Foreground="DarkBlue"/>
+        <Label x:Name="label" Content="Registration" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontFamily="Arial" FontStyle="Normal" Foreground="DarkBlue"/>
         <TextBox x:Name="loginBox" Grid.Column="1" HorizontalAlignment="Center" Height="25" Grid.Row="1" VerticalAlignment="Center" Width="150" Margin="5,5,5,5"/>
         <TextBox x:Name="emailBox" Grid.Column="1" HorizontalAlignment="Center" Height="25" Grid.Row="2" VerticalAlignment="Center" Width="150" Margin="5,5,5,5"/>
         <PasswordBox x:Name="passwordBox" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="150" Height="25" Margin="5,5,5,5"/>

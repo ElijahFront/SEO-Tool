@@ -23,5 +23,33 @@ namespace SeoTool.UI
         {
             InitializeComponent();
         }
+
+        private void loginBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            var emailTextBox = (TextBox)sender;
+            if (emailTextBox.Text == "Login")
+                emailTextBox.Text = "";
+        }
+
+        private void loginBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            var emailTextBox = (TextBox)sender;
+            if (emailTextBox.Text == "")
+                emailTextBox.Text = "Login";
+        }
+
+        private void emailBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            var emailTextBox = (TextBox)sender;
+            if (emailTextBox.Text == "E-mail")
+                emailTextBox.Text = "";
+        }
+
+        private void emailBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            var emailTextBox = (TextBox)sender;
+            if (emailTextBox.Text == "")
+                emailTextBox.Text = "E-mail";
+        }
     }
 }
