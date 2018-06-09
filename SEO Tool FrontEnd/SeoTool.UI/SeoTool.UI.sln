@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoTool.UI", "SeoTool.UI\SeoTool.UI.csproj", "{5D79F468-248E-437C-9E33-DF1A035E4A13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoTool.Data", "SeoTool.Data\SeoTool.Data.csproj", "{F43124A0-1A9B-4DBE-BEA5-001AA0DD8574}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5D79F468-248E-437C-9E33-DF1A035E4A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D79F468-248E-437C-9E33-DF1A035E4A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D79F468-248E-437C-9E33-DF1A035E4A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43124A0-1A9B-4DBE-BEA5-001AA0DD8574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43124A0-1A9B-4DBE-BEA5-001AA0DD8574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43124A0-1A9B-4DBE-BEA5-001AA0DD8574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43124A0-1A9B-4DBE-BEA5-001AA0DD8574}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
