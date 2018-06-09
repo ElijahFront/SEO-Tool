@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="SEO Tool" Height="350" Width="525" Background="LightGray">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="160*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150*"/>
+            <ColumnDefinition Width="210*"/>
+            <ColumnDefinition Width="150*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Registation" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontFamily="Arial" FontStyle="Normal" Foreground="DarkBlue"/>
+        <TextBox x:Name="loginBox" Grid.Column="1" HorizontalAlignment="Center" Height="25" Grid.Row="1" VerticalAlignment="Center" Width="150" Margin="5,5,5,5"/>
+        <TextBox x:Name="emailBox" Grid.Column="1" HorizontalAlignment="Center" Height="25" Grid.Row="2" VerticalAlignment="Center" Width="150" Margin="5,5,5,5"/>
+        <PasswordBox x:Name="passwordBox" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="150" Height="25" Margin="5,5,5,5"/>
+        <Button x:Name="registerButton" Content="Sign up" Grid.Column="1" HorizontalAlignment="Center" Margin="10,10,10,10" Grid.Row="4" VerticalAlignment="Top" Width="75" Foreground="LightBlue" Background="Black"/>
     </Grid>
 </Window>
