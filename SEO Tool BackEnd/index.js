@@ -28,5 +28,30 @@ function countWords(wordsArray) {
         });
     });
 
-    return finalArr;
+    return finalArr.slice(0, CalcStopWord(finalArr));
+}
+
+function CalcStopWord(wordsArray) {
+    let percSum = wordsArray.reduce((sum, currentItem)=>{
+        return sum+currentItem.percentage
+    }, 0);
+
+    let averagePercentage =
+        percSum / wordsArray.length;
+
+    return closest(averagePercentage, wordsArray);
+}
+function closest (num, arr) {
+    let curr = arr[0];
+    let index;
+    let diff = Math.abs (num - curr.percentage);
+    for (let val = 0; val < arr.length; val++) {
+        let newdiff = Math.abs (num - arr[val].percentage);
+        if (newdiff < diff) {
+            diff = newdiff;
+            curr = arr[val];
+            index = val;
+        }
+    }
+    return index;
 }

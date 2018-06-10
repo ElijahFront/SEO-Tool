@@ -30,22 +30,22 @@ let w = new Promise((resolve, reject)=>{
                 let elWithoutNewLines = elWithoutTabs.replace(/\n/g, "");
                 elWithoutNewLines = elWithoutNewLines.replace(/(\r\n|\n|\r)/gm, "");
                 elWithoutNewLines = elWithoutNewLines.replace(/"/g, "");
-                elWithoutNewLines = elWithoutNewLines.replace(/[\),\(]/g, "");
+                elWithoutNewLines = elWithoutNewLines.replace(/[\),\(]/g, ""); ///\bde\b/g
+                elWithoutNewLines = elWithoutNewLines.replace(/(the|that|this|for|these|with|their|also|и|and|или|or|a|an|are|is|which|will|would|как|только|а|так|также|у|в|около|возле|.|,|;)\b/ig, "");
                 wordsArrFromTextNode = elWithoutNewLines.replace(/,/gm, "").split(" ");
                 wordsArrFromTextNode.forEach((item, i)=>{
-                    if(item != '' && item.length >=3 && !hasNumber(item) && item != "и" && item != "and" && item != "или" && item != "the"
-                        && item != "a" && item != "are" && item != "which"){
+                    if(item != '' && item.length >=3 && !hasNumber(item)){
                         words.push(item);
                     }
                 });
             }
-            resolve(words);
+
         });
         function hasNumber(myString) {
             return /\d/.test(myString);
         }
     }
-
+        resolve(words);
     });
 
 
@@ -56,6 +56,7 @@ let w = new Promise((resolve, reject)=>{
                 .end()
                 .text();
         }
+
 
 
 });
