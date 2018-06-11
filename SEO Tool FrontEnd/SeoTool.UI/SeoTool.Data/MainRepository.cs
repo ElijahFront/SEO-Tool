@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.IO;
+using System.Diagnostics;
 
 namespace SeoTool.Data
 {
@@ -16,7 +17,7 @@ namespace SeoTool.Data
 
         public MainRepository()
         {
-            GenerateData();     
+            //GenerateData();     
         }
 
         public void GenerateData()
@@ -34,6 +35,17 @@ namespace SeoTool.Data
                 ErrorMessage = (string)(dataItem.Data);
             }
 
+        }
+
+        public void RunCmdCommand(string address)
+        {
+            Process process = new Process();
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "node ../../../../../SEO_Tool_BackEnd/index.js "+address;
+            process.StartInfo = startInfo;
+            process.Start();
         }
  
     }
