@@ -25,6 +25,8 @@ namespace SeoTool.UI
         public MainWindow()
         {
             InitializeComponent();
+            repo.OnBackEndError += HandleBackError;
+            repo.OnDataLoaded += RenewItemsSource;
         }
 
         private void _NavigationFrame_Navigated(object sender, NavigationEventArgs e)
@@ -32,11 +34,20 @@ namespace SeoTool.UI
 
         }
 
+        void RenewItemsSource()
+        {
+            
+        }
+
         private void Button_ClickSearch(object sender, RoutedEventArgs e)
         {
             string address;
             address = SearchTextbox.Text;
             repo.RunCmdCommand(address);
+        }
+        void HandleBackError(string msg)
+        {
+            MessageBox.Show(msg);
         }
     }
 }

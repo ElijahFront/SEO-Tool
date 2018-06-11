@@ -28,7 +28,7 @@ namespace SeoTool.Data
         }
         private MainRepository()
         {
-            //GenerateData();     
+            
         }
 
         public void GenerateData()
@@ -45,8 +45,10 @@ namespace SeoTool.Data
                 Status = 0;
                 ErrorMessage = (string)(dataItem.Data);
             }
-
+            OnDataLoaded?.Invoke();
         }
+        public event Action OnDataLoaded;
+        public event Action<string> OnBackEndError;
 
         public void RunCmdCommand(string address)
         {
@@ -57,6 +59,10 @@ namespace SeoTool.Data
             startInfo.Arguments = "node ../../../../../SEO_Tool_BackEnd/index.js "+address;
             process.StartInfo = startInfo;
             process.Start();
+            if (process.HasExited)
+            {
+                GenerateData();
+            }
         }
     }
 }
