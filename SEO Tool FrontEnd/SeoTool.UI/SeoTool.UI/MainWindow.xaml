@@ -8,7 +8,7 @@
         
         mc:Ignorable="d"
 
-        Title="SEO Tool" Height="350" Width="525">
+        Title="SEO Tool" Height="350" Background="LightBlue" Width="525">
     
     <Grid>
         
@@ -18,14 +18,14 @@
         </Grid.RowDefinitions>
         
         
-        <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Visible" Navigated="_NavigationFrame_Navigated" />
+        <Frame x:Name="_NavigationFrame" Background="LightBlue" NavigationUIVisibility="Visible" Navigated="_NavigationFrame_Navigated"/>
         
-            <TextBox Height="29" Width="300" Name="SearchTextbox" HorizontalAlignment="Center" Margin="0,35,29,0"></TextBox>
-        <Button Height="29" Width="29" Click="SearchButton_Click" Margin="300,0,0,0" VerticalAlignment="Bottom">
+            <TextBox Height="29" Width="300" GotFocus="SearchTextbox_GotFocus" LostFocus="SearchTextbox_LostFocus" Text="Введите URL-адрес" FontSize="18" Name="SearchTextbox" HorizontalAlignment="Center" Margin="0,35,29,0"></TextBox>
+        <Button Height="29" Width="29" Margin="300,0,0,0" VerticalAlignment="Bottom">
         <Image Name="imgSearch" DockPanel.Dock="Right" Source="Search.png" Height="23" Width="23"/>
         </Button>
         
-        <DataGrid  Grid.Row="1" Margin="20,20,20,20">
+        <DataGrid  Grid.Row="1" Margin="20,20,20,20" BorderThickness="0">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Слово" Width="1*" Binding="{Binding Word}"/>
                 <DataGridTextColumn Header="Частотность" Width="1*" Binding="{Binding Frequency}"/>

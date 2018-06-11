@@ -38,5 +38,19 @@ namespace SeoTool.UI
             address = SearchTextbox.Text;
             repo.RunCmdCommand(address);
         }
+
+        private void SearchTextbox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            var searchTextbox = (TextBox)sender;
+            if (searchTextbox.Text == "Введите URL-адрес")
+                searchTextbox.Text = "";
+        }
+
+        private void SearchTextbox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            var searchTextbox = (TextBox)sender;
+            if (searchTextbox.Text == "")
+                searchTextbox.Text = "Введите URL-адрес";
+        }
     }
 }

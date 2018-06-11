@@ -27,11 +27,6 @@ namespace SeoTool.UI
             InitializeComponent();
         }
 
-        private void registerButton_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
         private void loginBox_GotFocus(object sender, RoutedEventArgs e)
         {
             var loginTextBox = (TextBox)sender;
