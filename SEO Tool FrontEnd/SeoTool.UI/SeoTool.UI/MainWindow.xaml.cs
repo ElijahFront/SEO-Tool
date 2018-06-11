@@ -25,11 +25,18 @@ namespace SeoTool.UI
         public MainWindow()
         {
             InitializeComponent();
+            repo.OnBackEndError += HandleBackError;
+            repo.OnDataLoaded += RenewItemsSource;
         }
 
         private void _NavigationFrame_Navigated(object sender, NavigationEventArgs e)
         {
 
+        }
+
+        void RenewItemsSource()
+        {
+            
         }
 
         private void Button_ClickSearch(object sender, RoutedEventArgs e)
@@ -38,6 +45,7 @@ namespace SeoTool.UI
             address = SearchTextbox.Text;
             repo.RunCmdCommand(address);
         }
+<<<<<<< HEAD
 
         private void SearchTextbox_GotFocus(object sender, RoutedEventArgs e)
         {
@@ -54,3 +62,11 @@ namespace SeoTool.UI
         }
     }
 }
+=======
+        void HandleBackError(string msg)
+        {
+            MessageBox.Show(msg);
+        }
+    }
+}
+>>>>>>> 12db9fef968d05cb4b5aaf4b61c33709ad89fc80
