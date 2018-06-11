@@ -21,7 +21,7 @@
         <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Visible" Navigated="_NavigationFrame_Navigated" />
         
             <TextBox Height="29" Width="300" HorizontalAlignment="Center" Margin="0,35,29,0"></TextBox>
-        <Button Height="29" Width="29" Margin="300,0,0,0" VerticalAlignment="Bottom">
+        <Button Height="29" Width="29" Click="Button_Click" Margin="300,0,0,0" VerticalAlignment="Bottom">
         <Image Name="imgSearch" DockPanel.Dock="Right" Source="Search.png" Height="23" Width="23"/>
         </Button>
         

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SeoTool.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,37 +20,44 @@ namespace SeoTool.UI
     /// </summary>
     public partial class Login : Window
     {
+        UserRepository userRepo = new UserRepository();
+
         public Login()
         {
             InitializeComponent();
         }
 
+        private void registerButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
         private void loginBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            var emailTextBox = (TextBox)sender;
-            if (emailTextBox.Text == "Login")
-                emailTextBox.Text = "";
+            var loginTextBox = (TextBox)sender;
+            if (loginTextBox.Text == "Login")
+                loginTextBox.Text = "";
         }
 
         private void loginBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            var emailTextBox = (TextBox)sender;
-            if (emailTextBox.Text == "")
-                emailTextBox.Text = "Login";
+            var loginTextBox = (TextBox)sender;
+            if (loginTextBox.Text == "")
+                loginTextBox.Text = "Login";
         }
 
         private void passwordBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            var emailTextBox = (TextBox)sender;
-            if (emailTextBox.Text == "Password")
-                emailTextBox.Text = "";
+            var passwordTextBox = (PasswordBox)sender;
+            if (passwordTextBox.Password == "Password")
+                passwordTextBox.Password = "";
         }
 
         private void passwordBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            var emailTextBox = (TextBox)sender;
-            if (emailTextBox.Text == "")
-                emailTextBox.Text = "Password";
+            var passwordTextBox = (PasswordBox)sender;
+            if (passwordTextBox.Password == "")
+                passwordTextBox.Password = "Password";
         }
     }
 }

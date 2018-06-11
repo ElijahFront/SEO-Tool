@@ -3,3 +3,5 @@
 \\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.Data\obj\Debug\SeoTool.Data.csprojResolveAssemblyReference.cache
 \\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.Data\obj\Debug\SeoTool.Data.dll
 \\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.Data\obj\Debug\SeoTool.Data.pdb
+\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.Data\bin\Debug\Newtonsoft.Json.dll
+\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.Data\bin\Debug\Newtonsoft.Json.xml

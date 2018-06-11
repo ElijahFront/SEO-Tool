@@ -19,11 +19,11 @@
             <RowDefinition Height="146*"/>
         </Grid.RowDefinitions>
         <Label x:Name="label" Content="SEO Tool" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontFamily="Arial" FontStyle="Normal" Foreground="DarkBlue"/>
-        <TextBox x:Name="loginBox" Text="Login" Grid.Column="1" HorizontalAlignment="Center" Height="25" Grid.Row="1" VerticalAlignment="Center" Width="150" Margin="5,5,5,5"/>
-        <PasswordBox x:Name="passwordBox" Password="Password" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="150" Height="25" Margin="5,5,5,5"/>
+        <TextBox x:Name="loginBox" LostFocus="loginBox_LostFocus" GotFocus="loginBox_GotFocus" Text="Login" Grid.Column="1" HorizontalAlignment="Center" Height="25" Grid.Row="1" VerticalAlignment="Center" Width="150" Margin="5,5,5,5"/>
+        <PasswordBox x:Name="passwordBox" LostFocus="passwordBox_LostFocus" GotFocus="passwordBox_GotFocus" Password="Password" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="150" Height="25" Margin="5,5,5,5"/>
         <StackPanel Orientation="Vertical" Margin="0,5,0,0" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1">
-            <Button Height="21" Width="90" Foreground="LightBlue" Background="Black" Margin="5">Login</Button>
-            <Button Height="21" Width="90" Margin="5" Foreground="LightBlue" Background="Black" Name="Register">Register</Button>
+            <Button Name="loginButton" Height="21" Width="90" Foreground="LightBlue" Background="Black" Margin="5">Login</Button>
+            <Button Height="21" Width="90" Margin="5" Name="registerButton" Click="registerButton_click" Foreground="LightBlue" Background="Black">Register</Button>
         </StackPanel>
     </Grid>
 </Window>

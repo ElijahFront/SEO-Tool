@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SeoTool.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,23 +20,26 @@ namespace SeoTool.UI
     /// </summary>
     public partial class Register : Window
     {
-        public Register()
+        UserRepository UsrRepo { get; set; }
+
+        public Register(UserRepository repo)
         {
+            UsrRepo = repo;
             InitializeComponent();
         }
 
         private void loginBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            var emailTextBox = (TextBox)sender;
-            if (emailTextBox.Text == "Login")
-                emailTextBox.Text = "";
+            var loginTextBox = (TextBox)sender;
+            if (loginTextBox.Text == "Login")
+                loginTextBox.Text = "";
         }
 
         private void loginBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            var emailTextBox = (TextBox)sender;
-            if (emailTextBox.Text == "")
-                emailTextBox.Text = "Login";
+            var loginTextBox = (TextBox)sender;
+            if (loginTextBox.Text == "")
+                loginTextBox.Text = "Login";
         }
 
         private void emailBox_GotFocus(object sender, RoutedEventArgs e)
@@ -50,6 +54,20 @@ namespace SeoTool.UI
             var emailTextBox = (TextBox)sender;
             if (emailTextBox.Text == "")
                 emailTextBox.Text = "E-mail";
+        }
+
+        private void passwordBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            var passwordTextBox = (PasswordBox)sender;
+            if (passwordTextBox.Password == "Password")
+                passwordTextBox.Password = "";
+        }
+
+        private void passwordBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            var passwordTextBox = (PasswordBox)sender;
+            if (passwordTextBox.Password == "")
+                passwordTextBox.Password = "Password";
         }
     }
 }
