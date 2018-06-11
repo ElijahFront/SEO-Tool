@@ -15,7 +15,18 @@ namespace SeoTool.Data
         public int Status { get; set; }
         public string ErrorMessage { get; set; }
 
-        public MainRepository()
+         static MainRepository()
+        {
+
+        }
+        private static MainRepository instance;
+        public static MainRepository GetInstance()
+        {
+            if (instance == null)
+                instance = new MainRepository();
+            return instance;
+        }
+        private MainRepository()
         {
             //GenerateData();     
         }
@@ -47,6 +58,5 @@ namespace SeoTool.Data
             process.StartInfo = startInfo;
             process.Start();
         }
- 
     }
 }

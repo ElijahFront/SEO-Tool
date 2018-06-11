@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SeoTool.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace SeoTool.UI
     /// </summary>
     public partial class MainWindow : Window
     {
+        MainRepository repo = MainRepository.GetInstance();
         public MainWindow()
         {
             InitializeComponent();
@@ -30,9 +32,11 @@ namespace SeoTool.UI
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_ClickSearch(object sender, RoutedEventArgs e)
         {
-
+            string address;
+            address = SearchTextbox.Text;
+            repo.RunCmdCommand(address);
         }
     }
 }
