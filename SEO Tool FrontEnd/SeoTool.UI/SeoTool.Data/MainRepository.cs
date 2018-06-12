@@ -65,18 +65,33 @@ namespace SeoTool.Data
             //ProcessStartInfo startInfo = new ProcessStartInfo();
             //startInfo.WindowStyle = ProcessWindowStyle.Normal;
             //startInfo.FileName = "cmd.exe";
-            //startInfo.Arguments = "node ../../../../../SEO_Tool_BackEnd/index.js "+address;
+            //startInfo.Arguments = "/C node ../../../../../SEO_Tool_BackEnd/index.js " + address;
             //process.StartInfo = startInfo;
-            //process.Start();
+            //Process cmd = new Process();
+            //cmd.StartInfo.FileName = "cmd.exe";
+            //cmd.StartInfo.RedirectStandardInput = true;
+            //cmd.StartInfo.RedirectStandardOutput = true;
+            //cmd.StartInfo.CreateNoWindow = false;
+            //cmd.StartInfo.UseShellExecute = false;
+            //cmd.Start();
+
+            //cmd.StandardInput.WriteLine("/C node ../../../../../SEO_Tool_BackEnd/index.js " + address);
+            //cmd.StandardInput.Flush();
+            //cmd.StandardInput.Close();
+            //cmd.WaitForExit();
+            //Console.WriteLine(cmd.StandardOutput.ReadToEnd());
+
+            
+
+
             string strCmdText;
-            strCmdText = "/C node ../../../../../SEO_Tool_BackEnd/index.js " + address;
+            strCmdText = "node ../../../../../SEO_Tool_BackEnd/index.js " + address;
             Process process = System.Diagnostics.Process.Start("CMD.exe", strCmdText);
 
             while (!process.HasExited)
             {
 
             }
-            GenerateData();
         }
     }
 }
