@@ -1,54 +1,23 @@
-<<<<<<< HEAD
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.UI.exe.config
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.UI.exe
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.UI.pdb
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.csprojResolveAssemblyReference.cache
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\MainWindow.g.cs
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\App.g.cs
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI_MarkupCompile.cache
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI_MarkupCompile.lref
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\MainWindow.baml
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.g.resources
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.Properties.Resources.resources
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.csproj.GenerateResource.Cache
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.exe
-\\Mac\Home\Desktop\prog\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.pdb
-=======
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.UI.exe.config
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.UI.exe
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.UI.pdb
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.csprojResolveAssemblyReference.cache
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\MainWindow.g.cs
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\App.g.cs
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI_MarkupCompile.cache
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\MainWindow.baml
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.g.resources
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.Properties.Resources.resources
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.csproj.GenerateResource.Cache
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.csproj.CoreCompileInputs.cache
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.exe
-C:\Users\Анита\Desktop\учёба\team project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.pdb
->>>>>>> 2647f14a57e19e9e6a22fc59ce7954915141fdb7
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.UI.exe.config
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.exe
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.pdb
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.csprojResolveAssemblyReference.cache
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\MainWindow.baml
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\Login.g.cs
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\MainWindow.g.cs
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\App.g.cs
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI_MarkupCompile.cache
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI_MarkupCompile.lref
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.UI.exe
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.UI.pdb
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\Login.baml
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.g.resources
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.Properties.Resources.resources
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.csproj.GenerateResource.Cache
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\Register.g.cs
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\Register.baml
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\Histogram.g.cs
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\Newtonsoft.Json.dll
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.Data.dll
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.Data.pdb
-\\Mac\Home\Desktop\Team Project\SEO-Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\Newtonsoft.Json.xml
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.UI.exe.config
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.UI.exe
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.UI.pdb
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\Newtonsoft.Json.dll
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.Data.dll
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\SeoTool.Data.pdb
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\bin\Debug\Newtonsoft.Json.xml
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.csprojResolveAssemblyReference.cache
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\MainWindow.baml
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\Login.g.cs
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\MainWindow.g.cs
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\Register.g.cs
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\App.g.cs
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI_MarkupCompile.cache
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI_MarkupCompile.lref
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\Login.baml
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\Register.baml
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.g.resources
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.Properties.Resources.resources
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.csproj.GenerateResource.Cache
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.csproj.CoreCompileInputs.cache
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.exe
+D:\Документы\Обучение\Программирование\SEO Tool\SEO Tool FrontEnd\SeoTool.UI\SeoTool.UI\obj\Debug\SeoTool.UI.pdb
