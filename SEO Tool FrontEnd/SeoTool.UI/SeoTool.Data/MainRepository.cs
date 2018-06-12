@@ -35,11 +35,12 @@ namespace SeoTool.Data
         {
             try
             {
-                var txt = File.ReadAllText("../../../../data.json");
+                var path = @"../../../../../data.json";
+                var txt = File.ReadAllText(path);
                 var dataItem = JsonConvert.DeserializeObject<DataItem>(txt);
                 if (dataItem.Status == 1)
                 {
-                    Items = (List<WordItem>)(dataItem.Data);
+                    Items = ((Newtonsoft.Json.Linq.JArray)(dataItem.Data)).ToObject<List<WordItem>>();
                     Status = 1;
                 }
                 else
@@ -85,13 +86,14 @@ namespace SeoTool.Data
 
 
             string strCmdText;
-            strCmdText = "node ../../../../../SEO_Tool_BackEnd/index.js " + address;
+            strCmdText = "/c node ../../../../../SEO_Tool_BackEnd/index.js " + address;
             Process process = System.Diagnostics.Process.Start("CMD.exe", strCmdText);
-
+            process.WaitForExit(5000);
             while (!process.HasExited)
             {
 
             }
+            GenerateData();
         }
     }
 }

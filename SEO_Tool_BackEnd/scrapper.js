@@ -18,9 +18,9 @@ let w = new Promise((resolve, reject)=>{
             reject(err);
         }else{
             let encoding = jschardet.detect(new Buffer(html, 'binary').toString('binary')).encoding;
-            if(encoding == "windows-1251" || encoding == "windows-1252"){
-                reject({message:"The site has encoding that our service cannot work with: " + encoding + "please contact your webmaster to solve this issue"});
-            }
+            // if(encoding == "windows-1251" || encoding == "windows-1252"){
+            //     reject({message:"The site has encoding that our service cannot work with: " + encoding + "please contact your webmaster to solve this issue"});
+            // }
 
         let $ = cheerio.load(html);
         $('*').not('script').not('style').contents().each((i, el)=>{

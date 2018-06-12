@@ -2,8 +2,10 @@ console.log("hey");
 let words = require("./scrapper");
 const jsonWriter = require('./jsonWriter');
 const errLogger = require('./errorLogger');
-
+console.log("hello from line 5");
+console.log(words);
 words.words.then((res)=>{
+    console.log("in callback");
     jsonWriter(countWords(res));
 }, (err)=>{
      errLogger(err); // TODO: add decent logger

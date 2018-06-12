@@ -36,7 +36,7 @@ namespace SeoTool.UI
 
         void RenewItemsSource()
         {
-            
+            var items = repo.Items;
         }
 
         private void Button_ClickSearch(object sender, RoutedEventArgs e)
