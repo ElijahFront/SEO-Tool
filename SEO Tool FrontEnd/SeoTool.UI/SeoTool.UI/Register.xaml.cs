@@ -22,52 +22,31 @@ namespace SeoTool.UI
     {
         UserRepository UsrRepo { get; set; }
 
-        public Register(UserRepository repo)
+        public Register()
         {
-            UsrRepo = repo;
             InitializeComponent();
         }
-
-        private void loginBox_GotFocus(object sender, RoutedEventArgs e)
+        
+        private void regButton_Click(object sender, RoutedEventArgs e)
         {
-            var loginTextBox = (TextBox)sender;
-            if (loginTextBox.Text == "Login")
-                loginTextBox.Text = "";
+            var login = loginBox.Text;
+            var email = emailBox.Text;
+            var password = Hasher.GetHash(passwordBox.Password);
+
+            var repo = new UserRepository();
+            repo.NewMessage += ShowMessageBox;
+
+            if (repo.AddUser(login, email, password))
+            {
+                var loginWindow = new Login();
+                Close();
+                loginWindow.ShowDialog();
+            }
         }
 
-        private void loginBox_LostFocus(object sender, RoutedEventArgs e)
+        private void ShowMessageBox(string message, string name)
         {
-            var loginTextBox = (TextBox)sender;
-            if (loginTextBox.Text == "")
-                loginTextBox.Text = "Login";
-        }
-
-        private void emailBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            var emailTextBox = (TextBox)sender;
-            if (emailTextBox.Text == "E-mail")
-                emailTextBox.Text = "";
-        }
-
-        private void emailBox_LostFocus(object sender, RoutedEventArgs e)
-        {
-            var emailTextBox = (TextBox)sender;
-            if (emailTextBox.Text == "")
-                emailTextBox.Text = "E-mail";
-        }
-
-        private void passwordBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            var passwordTextBox = (PasswordBox)sender;
-            if (passwordTextBox.Password == "Password")
-                passwordTextBox.Password = "";
-        }
-
-        private void passwordBox_LostFocus(object sender, RoutedEventArgs e)
-        {
-            var passwordTextBox = (PasswordBox)sender;
-            if (passwordTextBox.Password == "")
-                passwordTextBox.Password = "Password";
+            MessageBox.Show(message, name);
         }
     }
 }

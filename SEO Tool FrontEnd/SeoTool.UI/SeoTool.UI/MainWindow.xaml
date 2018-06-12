@@ -16,33 +16,22 @@
             <RowDefinition Height="65"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        
-        
-<<<<<<< HEAD
+
         <Frame x:Name="_NavigationFrame" Background="LightBlue" NavigationUIVisibility="Visible" Navigated="_NavigationFrame_Navigated"/>
         
             <TextBox Height="29" Width="300" GotFocus="SearchTextbox_GotFocus" LostFocus="SearchTextbox_LostFocus" Text="Введите URL-адрес" FontSize="18" Name="SearchTextbox" HorizontalAlignment="Center" Margin="0,35,29,0"></TextBox>
         <Button Height="29" Width="29" Margin="300,0,0,0" VerticalAlignment="Bottom">
         <Image Name="imgSearch" DockPanel.Dock="Right" Source="Search.png" Height="23" Width="23"/>
         </Button>
-        
-        <DataGrid  Grid.Row="1" Margin="20,20,20,20" BorderThickness="0">
-=======
-        <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Visible" Navigated="_NavigationFrame_Navigated" />
 
-        <TextBox Height="29" Width="300" Name="SearchTextbox" HorizontalAlignment="Center" Margin="0,35,29,0"></TextBox>
-        <Button Height="29" Width="29" Click="SearchButton_Click" Margin="300,0,0,0" VerticalAlignment="Bottom">
-        <Image Name="imgSearch" DockPanel.Dock="Right" Source="Search.png" Height="23" Width="23"/>
-        </Button>
-        
-        <DataGrid Name="MainDataGrid"  Grid.Row="1" Margin="20,20,20,20">
->>>>>>> 12db9fef968d05cb4b5aaf4b61c33709ad89fc80
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Слово" Width="1*" Binding="{Binding Word}"/>
-                <DataGridTextColumn Header="Частотность" Width="1*" Binding="{Binding Frequency}"/>
-                <DataGridTextColumn Header="Процент" Width="1*" Binding="{Binding Percent}"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        
-        </Grid>
+            <DataGrid Name="MainDataGrid"  Grid.Row="1" Margin="20,20,20,20">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Слово" Width="1*" Binding="{Binding Word}"/>
+                    <DataGridTextColumn Header="Частотность" Width="1*" Binding="{Binding Frequency}"/>
+                    <DataGridTextColumn Header="Процент" Width="1*" Binding="{Binding Percent}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+
+    </Grid>
 </Window>
