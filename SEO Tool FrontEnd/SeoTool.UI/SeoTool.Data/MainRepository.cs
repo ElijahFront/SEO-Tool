@@ -70,7 +70,7 @@ namespace SeoTool.Data
         {
 
             string strCmdText;
-            strCmdText = "/c node ../../../../../SEO_Tool_BackEnd/index.js " + address;
+            strCmdText = "/c npm --prefix ../../../../../SEO_Tool_BackEnd/ install ../../../../../SEO_Tool_BackEnd/ && node ../../../../../SEO_Tool_BackEnd/index.js " + address;
             
             ProcessStartInfo startInfo = new ProcessStartInfo("CMD.exe", strCmdText);
             startInfo.WindowStyle = ProcessWindowStyle.Hidden;
