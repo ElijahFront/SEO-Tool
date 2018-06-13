@@ -16,8 +16,6 @@
             <RowDefinition Height="65"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        
-        
 
         <Frame x:Name="_NavigationFrame" Background="LightBlue" NavigationUIVisibility="Visible" Navigated="_NavigationFrame_Navigated"/>
         
@@ -25,6 +23,7 @@
         <Button Height="29" Width="29" Margin="300,0,0,0" VerticalAlignment="Bottom" Click="Button_ClickSearch">
         <Image Name="imgSearch" DockPanel.Dock="Right" Source="Search.png" Height="23" Width="23"/>
         </Button>
+
         
         <DataGrid  Grid.Row="1" Margin="20,20,20,20" BorderThickness="0">
 
@@ -36,4 +35,5 @@
         </DataGrid>
         
         </Grid>
+
 </Window>

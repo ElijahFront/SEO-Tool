@@ -13,7 +13,7 @@
             <ColumnDefinition Width="168*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="77*"/>
+            <RowDefinition Height="100*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="146*"/>
@@ -22,8 +22,8 @@
         <TextBox x:Name="loginBox" LostFocus="loginBox_LostFocus" FontSize="16"  GotFocus="loginBox_GotFocus" Text="Login" BorderThickness="0" Grid.Column="1" HorizontalAlignment="Center" Height="25" Grid.Row="1" VerticalAlignment="Center" Width="150" Margin="5,5,5,5"/>
         <PasswordBox x:Name="passwordBox" LostFocus="passwordBox_LostFocus" FontSize="16" GotFocus="passwordBox_GotFocus" BorderThickness="0" Password="Password" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="150" Height="25" Margin="5,5,5,5"/>
         <StackPanel Orientation="Vertical" Margin="0,5,0,0" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1">
-            <Button Name="loginButton" Height="21" Width="90" Foreground="LightBlue" Background="DarkCyan" Margin="5" BorderThickness="0" >Login</Button>
-            <Button Height="21" Width="90" Margin="5" Name="registerButton" Foreground="LightBlue" Background="Black" BorderThickness="0" >Register</Button>
+            <Button Name="loginButton" Height="21" Width="90" Click="loginButton_Click" Background="DarkCyan" Foreground="Aquamarine" Margin="5" BorderThickness="0" >Sign in</Button>
+            <Button Height="21" Width="90" Margin="5" Name="registerButton" Click="registerButton_Click" Background="DarkCyan" Foreground="Aquamarine" BorderThickness="0" >Sign up</Button>
         </StackPanel>
     </Grid>
 </Window>
