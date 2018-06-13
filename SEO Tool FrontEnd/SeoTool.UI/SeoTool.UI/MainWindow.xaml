@@ -16,7 +16,12 @@
             <RowDefinition Height="65"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+<<<<<<< HEAD
 
+=======
+        
+        
+>>>>>>> BackEnd
         <Frame x:Name="_NavigationFrame" Background="LightBlue" NavigationUIVisibility="Visible" Navigated="_NavigationFrame_Navigated"/>
         
             <TextBox Height="29" Width="300" GotFocus="SearchTextbox_GotFocus" LostFocus="SearchTextbox_LostFocus" Text="Введите URL-адрес" FontSize="18" Name="SearchTextbox" HorizontalAlignment="Center" Margin="0,35,29,0"></TextBox>

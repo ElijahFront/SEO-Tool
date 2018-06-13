@@ -33,36 +33,67 @@ namespace SeoTool.Data
 
         public void GenerateData()
         {
-            var txt = File.ReadAllText("/.../");
-            var dataItem = JsonConvert.DeserializeObject<DataItem>(txt);
-            if(dataItem.Status == 1)
+            try
             {
-                Items = (List<WordItem>)(dataItem.Data);
-                Status = 1;
+                var path = @"../../../../../data.json";
+                var txt = File.ReadAllText(path);
+                var dataItem = JsonConvert.DeserializeObject<DataItem>(txt);
+                if (dataItem.Status == 1)
+                {
+                    Items = ((Newtonsoft.Json.Linq.JArray)(dataItem.Data)).ToObject<List<WordItem>>();
+                    Status = 1;
+                }
+                else
+                {
+                    Status = 0;
+                    ErrorMessage = (string)(dataItem.Data);
+                }
+                OnDataLoaded?.Invoke();
             }
-            else
+            catch (Exception e)
             {
-                Status = 0;
-                ErrorMessage = (string)(dataItem.Data);
+
             }
-            OnDataLoaded?.Invoke();
+            
         }
         public event Action OnDataLoaded;
         public event Action<string> OnBackEndError;
 
+
         public void RunCmdCommand(string address)
         {
-            Process process = new Process();
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "node ../../../../../SEO_Tool_BackEnd/index.js "+address;
-            process.StartInfo = startInfo;
-            process.Start();
-            if (process.HasExited)
+            //Process process = new Process();
+            //ProcessStartInfo startInfo = new ProcessStartInfo();
+            //startInfo.WindowStyle = ProcessWindowStyle.Normal;
+            //startInfo.FileName = "cmd.exe";
+            //startInfo.Arguments = "/C node ../../../../../SEO_Tool_BackEnd/index.js " + address;
+            //process.StartInfo = startInfo;
+            //Process cmd = new Process();
+            //cmd.StartInfo.FileName = "cmd.exe";
+            //cmd.StartInfo.RedirectStandardInput = true;
+            //cmd.StartInfo.RedirectStandardOutput = true;
+            //cmd.StartInfo.CreateNoWindow = false;
+            //cmd.StartInfo.UseShellExecute = false;
+            //cmd.Start();
+
+            //cmd.StandardInput.WriteLine("/C node ../../../../../SEO_Tool_BackEnd/index.js " + address);
+            //cmd.StandardInput.Flush();
+            //cmd.StandardInput.Close();
+            //cmd.WaitForExit();
+            //Console.WriteLine(cmd.StandardOutput.ReadToEnd());
+
+            
+
+
+            string strCmdText;
+            strCmdText = "/c node ../../../../../SEO_Tool_BackEnd/index.js " + address;
+            Process process = System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+            process.WaitForExit(5000);
+            while (!process.HasExited)
             {
-                GenerateData();
+
             }
+            GenerateData();
         }
     }
 }
