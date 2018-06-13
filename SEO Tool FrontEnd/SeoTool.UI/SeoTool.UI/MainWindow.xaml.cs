@@ -36,11 +36,9 @@ namespace SeoTool.UI
 
         void RenewItemsSource()
         {
-<<<<<<< HEAD
+            MainDataGrid.ItemsSource = null;
+            MainDataGrid.ItemsSource = repo.GetItems();
 
-=======
-            var items = repo.Items;
->>>>>>> BackEnd
         }
 
         private void Button_ClickSearch(object sender, RoutedEventArgs e)
@@ -64,18 +62,11 @@ namespace SeoTool.UI
             if (searchTextbox.Text == "")
                 searchTextbox.Text = "Введите URL-адрес";
         }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> BackEnd
         void HandleBackError(string msg)
         {
             MessageBox.Show(msg);
         }
     }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> BackEnd

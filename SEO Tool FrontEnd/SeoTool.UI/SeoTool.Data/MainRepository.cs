@@ -11,11 +11,11 @@ namespace SeoTool.Data
 {
     public class MainRepository
     {
-        public List<WordItem> Items { get; set; }
+        List<WordItem> Items { get; set; }
         public int Status { get; set; }
         public string ErrorMessage { get; set; }
 
-         static MainRepository()
+        static MainRepository()
         {
 
         }
@@ -29,6 +29,11 @@ namespace SeoTool.Data
         private MainRepository()
         {
             
+        }
+
+        public List<WordItem> GetItems()
+        {
+            return Items;
         }
 
         public void GenerateData()
@@ -47,6 +52,7 @@ namespace SeoTool.Data
                 {
                     Status = 0;
                     ErrorMessage = (string)(dataItem.Data);
+                    OnBackEndError?.Invoke(ErrorMessage);
                 }
                 OnDataLoaded?.Invoke();
             }
@@ -62,32 +68,13 @@ namespace SeoTool.Data
 
         public void RunCmdCommand(string address)
         {
-            //Process process = new Process();
-            //ProcessStartInfo startInfo = new ProcessStartInfo();
-            //startInfo.WindowStyle = ProcessWindowStyle.Normal;
-            //startInfo.FileName = "cmd.exe";
-            //startInfo.Arguments = "/C node ../../../../../SEO_Tool_BackEnd/index.js " + address;
-            //process.StartInfo = startInfo;
-            //Process cmd = new Process();
-            //cmd.StartInfo.FileName = "cmd.exe";
-            //cmd.StartInfo.RedirectStandardInput = true;
-            //cmd.StartInfo.RedirectStandardOutput = true;
-            //cmd.StartInfo.CreateNoWindow = false;
-            //cmd.StartInfo.UseShellExecute = false;
-            //cmd.Start();
-
-            //cmd.StandardInput.WriteLine("/C node ../../../../../SEO_Tool_BackEnd/index.js " + address);
-            //cmd.StandardInput.Flush();
-            //cmd.StandardInput.Close();
-            //cmd.WaitForExit();
-            //Console.WriteLine(cmd.StandardOutput.ReadToEnd());
-
-            
-
 
             string strCmdText;
             strCmdText = "/c node ../../../../../SEO_Tool_BackEnd/index.js " + address;
-            Process process = System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+            
+            ProcessStartInfo startInfo = new ProcessStartInfo("CMD.exe", strCmdText);
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            Process process = System.Diagnostics.Process.Start(startInfo);
             process.WaitForExit(5000);
             while (!process.HasExited)
             {
