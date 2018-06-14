@@ -2,8 +2,7 @@ let w = new Promise((resolve, reject)=>{
     let words = [];
     const request = require('request');
     const cheerio = require('cheerio');
-    //const windows1251 = require('windows-1251');
-    // const jschardet = require("jschardet");
+
 
     let url = process.argv[2] != undefined ? process.argv[2] : "https://api.jquery.com/contents/";
 
@@ -17,10 +16,13 @@ let w = new Promise((resolve, reject)=>{
         if(err){
             reject(err);
         }else{
-            // let encoding = jschardet.detect(new Buffer(html, 'binary').toString('binary')).encoding;
-            // if(encoding == "windows-1251" || encoding == "windows-1252"){
-            //     reject({message:"The site has encoding that our service cannot work with: " + encoding + ". Please contact your webmaster to solve this issue"});
-            // }
+            if(response.statusCode === 404 ){
+                console.log(response.statusCode);
+                reject({message:"Page not found"});
+            }
+            if(response.statusCode === 500){
+                reject({message:"Backend website error has occurred"});
+            }
 
         let $ = cheerio.load(html);
         $('*').not('script').not('style').contents().each((i, el)=>{
