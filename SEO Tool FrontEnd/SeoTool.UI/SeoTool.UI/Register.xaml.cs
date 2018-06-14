@@ -48,5 +48,12 @@ namespace SeoTool.UI
         {
             MessageBox.Show(message, name);
         }
+
+        private void leftButton_Click(object sender, RoutedEventArgs e)
+        {
+            var loginWindow = new Login();
+            Close();
+            loginWindow.ShowDialog();
+        }
     }
 }

@@ -23,12 +23,16 @@
             <ColumnDefinition Width="146*"/>
         </Grid.ColumnDefinitions>
         <Label x:Name="label" Content="Create your account" FontFamily="Arial" Grid.Column="1" FontSize="20" Foreground="DarkCyan" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
-        <TextBox x:Name="loginBox" Grid.Column="1" BorderThickness="0" HorizontalAlignment="Left" Height="27" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="225"/>
-        <TextBox x:Name="emailBox" Grid.Column="1" BorderThickness="0" HorizontalAlignment="Left" Height="27" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Width="225"/>
-        <PasswordBox x:Name="passwordBox" Grid.Column="1" BorderThickness="0" HorizontalAlignment="Left" Grid.Row="6" VerticalAlignment="Top" Width="225" Height="27"/>
+        <TextBox x:Name="loginBox" Grid.Column="1" BorderThickness="0" FontSize="16" HorizontalAlignment="Left" Height="27" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="225"/>
+        <TextBox x:Name="emailBox" Grid.Column="1" BorderThickness="0" FontSize="16" HorizontalAlignment="Left" Height="27" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Width="225"/>
+        <PasswordBox x:Name="passwordBox" Grid.Column="1" BorderThickness="0" FontSize="16" HorizontalAlignment="Left" Grid.Row="6" VerticalAlignment="Top" Width="225" Height="27"/>
         <Button x:Name="regButton" BorderThickness="0" Background="DarkCyan" Click="regButton_Click"  Foreground="Aquamarine" Content="Sign up" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="53,10,0,0" Grid.Row="7" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="label1" Content="Login" Grid.Column="1" FontSize="13" Foreground="DarkGreen" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="Auto" Height="27" Grid.Row="1"/>
         <Label x:Name="label2" Content="E-mail" Grid.Column="1" FontSize="13" Foreground="DarkGreen" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="Auto" Height="27" Grid.Row="3"/>
         <Label x:Name="label3" Content="Password" FontSize="13" Grid.Column="1" Foreground="DarkGreen" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="Auto" Height="27" Grid.Row="5"/>
+        <Button x:Name="leftButton" Click="leftButton_Click" Height="40" Width="40" Background="LightBlue" BorderThickness="0">
+            <Image Name="left" DockPanel.Dock="Left" Source="left.png" Height="36" Width="36" />
+        </Button>
+        
     </Grid>
 </Window>
