@@ -55,6 +55,8 @@ let w = new Promise((resolve, reject)=>{
             .end()
             .text();
     }
+
+
     function isWordOk(word) {
         let forbiddenWords = ["the","that","this","for","these","with","their","also","и","and","или","or","a","an","are","is","which","will",
             "would","как","только","а","так","также","у","в","около","возле",".",",",";","для","это","над","под","уже","нет","тех","что",

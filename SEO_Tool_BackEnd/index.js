@@ -24,7 +24,7 @@ function countWords(wordsArray) {
         finalArr.push({
             word:e,
             count:tempArr[e],
-            percentage:(tempArr[e]/wordsArray.length)*100
+            percentage:roundPlus((tempArr[e]/wordsArray.length)*100, 3)
         });
     });
 
@@ -40,6 +40,11 @@ function CalcStopWord(wordsArray) {
         percSum / wordsArray.length;
 
     return closest(averagePercentage, wordsArray);
+}
+function roundPlus(x, n) { //x - число, n - количество знаков
+    if(isNaN(x) || isNaN(n)) return false;
+    let m = Math.pow(10,n);
+    return Math.round(x*m)/m;
 }
 function closest (num, arr) {
     let curr = arr[0];
